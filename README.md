@@ -1,6 +1,6 @@
-# Seppe Vangeel
+# 2imd-dev-portfolio
 
-[Portfolio repository](https://github.com/seppevg/2imd-dev-portfolio)
+Repository of Seppe Vangeel
 
 ## Lab links
 
