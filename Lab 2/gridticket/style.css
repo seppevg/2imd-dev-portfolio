@@ -144,6 +144,6 @@ h2 {
         display: unset;
         grid-column: 1 / 4;
         grid-row: 3;
-        text-transform: lowercase;
+        text-transform: initial;
     }
 }
