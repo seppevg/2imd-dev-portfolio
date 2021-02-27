@@ -10,8 +10,8 @@
 
 ## The Future
 
-click this [Link](https://github.com/seppevg/2imd-dev-portfolio/tree/main/Lab%202/thefuture) to see my work
+Click this [Link](https://codepen.io/seppevg/pen/ZEBxEVY) to see my work!
 
 ## Grid Ticket
 
-click this [Link](https://github.com/seppevg/2imd-dev-portfolio/tree/main/Lab%202/gridticket) to see my work
+Click this [Link](https://codepen.io/seppevg/pen/KKNoKJj?editors=1100) to see my work!
