@@ -13,15 +13,13 @@ section {
 div {
     background-color: #f83259;
     min-width: 100%;
-
-    font-weight: bold;
-    font-size: 1.5em;
-
     padding: 1.5em;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 #broken__future {
