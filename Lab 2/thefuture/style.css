@@ -38,3 +38,19 @@ div {
     }
 }
 
+@media screen and (min-width: 1000px) {
+    section {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    #broken__future {
+        grid-column: 3;
+        grid-row: 1 / -1;
+    }
+
+    #infinity {
+        grid-column: 4 / -1;
+        grid-row: 2 / -1;
+    }
+}
