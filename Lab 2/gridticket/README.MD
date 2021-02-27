@@ -1,3 +1,3 @@
 # Gridticket
 
-## Using css grid to make a planeticket
+## Using css grid to make a festivalticket
