@@ -11,7 +11,7 @@ section {
 }
 
 div {
-    background-color: #F83259;
+    background-color: #f83259;
     min-width: 100%;
 
     font-weight: bold;
@@ -23,3 +23,18 @@ div {
     align-items: center;
     justify-content: center;
 }
+
+#broken__future {
+    background-color: #63f6f3;
+}
+
+#infinity {
+    background-color: #ffff04;
+}
+
+@media screen and (min-width: 550px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
