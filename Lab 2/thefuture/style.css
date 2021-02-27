@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5em;
+}
+
+div {
+    background-color: #F83259;
+    min-width: 100%;
+
+    font-weight: bold;
+    font-size: 1.5em;
+
+    padding: 1.5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
