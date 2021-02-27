@@ -7,3 +7,11 @@
 ## Grid Garden
 
 ![Screen_Grid_Garden](https://user-images.githubusercontent.com/76737040/108985910-dfae2700-7691-11eb-8791-e2f5e04ea479.png)
+
+## The Future
+
+click this [Link](https://github.com/seppevg/2imd-dev-portfolio/tree/main/Lab%202/thefuture) to see my work
+
+## Grid Ticket
+
+click this [Link](https://github.com/seppevg/2imd-dev-portfolio/tree/main/Lab%202/gridticket) to see my work
