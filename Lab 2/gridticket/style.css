@@ -82,3 +82,68 @@ h2 {
 .disclaimer {
     display: none;
 }
+
+@media(min-width: 1000px) {
+    .container{
+        height: 100%;
+        border: 2px solid black;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 3fr 0.5fr 0.5fr;
+    }
+
+    .container::after {
+        left: 0;
+    }
+
+    .header {
+        grid-column: 1 / 4;
+        background-color: transparent;
+        color: black;
+        padding: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        border: 2px solid black;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .qr__container {
+        grid-column: 4 / 5;
+        grid-row: -4 / -1;
+        padding: 40px;
+    }
+
+    .date, .admit, .price {
+        grid-row: 2;
+        font-size: 25px;
+    }
+
+    .date {
+        grid-column: 1 / 2;
+    }
+
+    .admit {
+        grid-column: 2 / 3;
+    }
+
+    .price {
+        grid-column: 3 / 4;
+    }
+
+    .disclaimer {
+        font-weight: lighter;
+        font-size: 15px;
+        border: 2px solid black;
+        padding: 18px;
+        display: unset;
+        grid-column: 1 / 4;
+        grid-row: 3;
+        text-transform: lowercase;
+    }
+}
