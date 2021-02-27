@@ -121,7 +121,8 @@ h2 {
 
     .date, .admit, .price {
         grid-row: 2;
-        font-size: 25px;
+        font-size: 30px;
+        line-height: 50px;
     }
 
     .date {
@@ -138,7 +139,7 @@ h2 {
 
     .disclaimer {
         font-weight: lighter;
-        font-size: 15px;
+        font-size: 25px;
         border: 2px solid black;
         padding: 18px;
         display: unset;
