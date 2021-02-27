@@ -78,67 +78,66 @@ h2 {
 }
 
 @media(min-width: 1000px) {
-    .container{
-        height: 100%;
-        border: 2px solid black;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 3fr 0.5fr 0.5fr;
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .container::after {
-        left: 0;
+    .container {
+        height: 300px;
+        width: 900px;
+        border: 1px solid black;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        grid-template-rows: 3fr 1fr 1fr;
     }
 
     .header {
         grid-column: 1 / 4;
         background-color: transparent;
         color: black;
-        padding: 50px;
-        display: flex;
         flex-direction: column-reverse;
-        border: 2px solid black;
+        border: 1px solid black;
     }
 
     h1 {
-        font-size: 100px;
+        font-size: 5em;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 1em;
     }
 
     .qr__container {
-        grid-column: 4 / 5;
-        grid-row: -4 / -1;
-        padding: 40px;
+        grid-column: 4;
+        grid-row: 1 / span1;
     }
 
-    .date, .admit, .price {
-        grid-row: 2;
-        font-size: 30px;
-        line-height: 50px;
+    .qr__container img {
+        padding: 1em;
     }
 
     .date {
-        grid-column: 1 / 2;
+        grid-column: 1;
+        grid-row: 2;
     }
 
     .admit {
-        grid-column: 2 / 3;
+        grid-column: 2;
     }
 
     .price {
-        grid-column: 3 / 4;
+        grid-column: 3;
+        grid-row: 2;
     }
 
     .disclaimer {
         font-weight: lighter;
-        font-size: 25px;
-        border: 2px solid black;
-        padding: 18px;
+        font-size: 1em;
         display: unset;
         grid-column: 1 / 4;
-        grid-row: 3;
         text-transform: initial;
+        display: flex;
+        align-items: center;
     }
 }
