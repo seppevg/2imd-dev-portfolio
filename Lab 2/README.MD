@@ -12,6 +12,14 @@
 
 Click this [Link](https://codepen.io/seppevg/pen/ZEBxEVY) to see my work!
 
+![Screenshot_TheFuture_Mobile](https://user-images.githubusercontent.com/76737040/109391740-eef2d600-7918-11eb-8d88-70774ce777e4.png)
+
+![Screenshot_TheFuture_desktop](https://user-images.githubusercontent.com/76737040/109391739-eef2d600-7918-11eb-8618-75126c84895c.png)
+
 ## Grid Ticket
 
 Click this [Link](https://codepen.io/seppevg/pen/KKNoKJj?editors=1100) to see my work!
+
+![Screenshot_GridTicket_Mobile](https://user-images.githubusercontent.com/76737040/109391738-ee5a3f80-7918-11eb-998f-ae2afc78a880.png)
+
+![Screenshot_GridTicket_Desktop](https://user-images.githubusercontent.com/76737040/109391737-edc1a900-7918-11eb-96e8-53d5f0c58867.png)
