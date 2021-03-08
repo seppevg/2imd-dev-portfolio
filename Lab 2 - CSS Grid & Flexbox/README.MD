@@ -20,6 +20,6 @@ Click this [Link](https://codepen.io/seppevg/pen/ZEBxEVY) to see my work!
 
 Click this [Link](https://codepen.io/seppevg/pen/KKNoKJj?editors=1100) to see my work!
 
-![Screenshot_GridTicket_Mobile](https://user-images.githubusercontent.com/76737040/109391738-ee5a3f80-7918-11eb-998f-ae2afc78a880.png)
+![Screenshot_GridTicket_Mobile](https://user-images.githubusercontent.com/76737040/109393239-d2f33280-7920-11eb-95f4-5e9151372416.png)
 
-![Screenshot_GridTicket_Desktop](https://user-images.githubusercontent.com/76737040/109391737-edc1a900-7918-11eb-96e8-53d5f0c58867.png)
+![Screenshot_GridTicket_Desktop](https://user-images.githubusercontent.com/76737040/109393238-d1c20580-7920-11eb-9f81-9600ce19c654.png)
