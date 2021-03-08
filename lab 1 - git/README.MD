@@ -6,4 +6,4 @@
 
 ## Website
 
-[Website](https://github.com/seppevg/2imd-dev-advanced-lab1) to learn cooperation in Git.
+[Website](https://github.com/seppevg/2imd-dev-advanced-lab1) to learn coöperation in Git.
