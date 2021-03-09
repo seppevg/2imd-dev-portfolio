@@ -45,25 +45,44 @@ class App {
     // read up on .bind() -> we need to pass the current meaning of this to the eventListener
     // when the app loads, we can show previously saved noted from localstorage
     // this.loadNotesFromStorage();
-}
 
-loadNotesFromStorage() {
+    loadNotesFromStorage() {
+        let notes = localStorage.getItem("notes");
+        notes = JSON.parse(notes);
+        if (notes !== null) {
+            notes.forEach(title => {
+                let newNote = new Note(title);
+                newNote.add();
+            });
+        }
+    }
     // HINT🤩
     // load all notes from storage here and add them to the screen
-}
 
-createNote(e) {
+
+    createNote(event) {
+        if (this.txtTodo.value !== "") {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                let note = new Note(this.txtTodo.value);
+                note.add();
+                note.saveToStorage();
+                this.reset();
+            }
+        }
+    }
     // this function should create a new note by using the Note() class
     // HINT🤩
     // note.add();
     // note.saveToStorage();
     // clear the text field with .reset in this class
     // if (e.key === "Enter")
-}
 
-reset() {
+    reset() {
+        this.txtTodo.value = "";
+    }
     // this function should reset the form / clear the text field
-}
+
 }
 
 let app = new App();
