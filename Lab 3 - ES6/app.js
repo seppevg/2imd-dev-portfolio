@@ -1,7 +1,7 @@
 class Note {
     constructor(title) {
         this.title = title;
-        this.element = this.createElement(title);
+        this.element = this.createElement(this.title);
     }
     // HINT🤩 this.element = this.createElement(title);
 
@@ -15,6 +15,7 @@ class Note {
     // HINT🤩 newNote.addEventListener('click', this.remove.bind(newNote));
 
     add() {
+        document.querySelector("#taskList").appendChild(this.element);
         // HINT🤩
         // this function should append the note to the screen somehow
     }
