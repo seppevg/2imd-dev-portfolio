@@ -16,9 +16,9 @@ class Note {
 
     add() {
         document.querySelector("#taskList").appendChild(this.element);
-        // HINT🤩
-        // this function should append the note to the screen somehow
     }
+    // HINT🤩
+    // this function should append the note to the screen somehow
 
     saveToStorage() {
         let notes = localStorage.getItem("notes");
