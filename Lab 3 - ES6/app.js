@@ -8,11 +8,11 @@ class Note {
 
     createElement(title) {
         let newNote = document.createElement("li");
-
-        // HINT🤩 newNote.addEventListener('click', this.remove.bind(newNote));
-
+        newNote.innerHTML = title;
+        newNote.addEventListener('click', this.remove.bind(newNote));
         return newNote;
     }
+    // HINT🤩 newNote.addEventListener('click', this.remove.bind(newNote));
 
     add() {
         // HINT🤩
