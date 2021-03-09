@@ -49,11 +49,14 @@ class App {
     loadNotesFromStorage() {
         let notes = localStorage.getItem("notes");
         notes = JSON.parse(notes);
+
         if (notes !== null) {
+
             notes.forEach(title => {
                 let newNote = new Note(title);
                 newNote.add();
             });
+
         }
     }
     // HINT🤩
@@ -62,21 +65,25 @@ class App {
 
     createNote(event) {
         if (this.txtTodo.value !== "") {
+
             if (event.key === "Enter") {
                 event.preventDefault();
+
                 let note = new Note(this.txtTodo.value);
                 note.add();
                 note.saveToStorage();
+
                 this.reset();
             }
+
         }
     }
     // this function should create a new note by using the Note() class
     // HINT🤩
+    // if (e.key === "Enter")
     // note.add();
     // note.saveToStorage();
     // clear the text field with .reset in this class
-    // if (e.key === "Enter")
 
     reset() {
         this.txtTodo.value = "";
