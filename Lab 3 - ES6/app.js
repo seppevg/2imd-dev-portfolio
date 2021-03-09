@@ -31,11 +31,21 @@ class Note {
     // if you want to store arrays, look at JSON.parse and JSON.stringify
 
     remove() {
-        // HINT🤩 the meaning of 'this' was set by bind() in the createElement function
-        // in this function, 'this' will refer to the current note element
-        // .removeChild(this)
-        // remove the item from screen and from localstorage
+        document.querySelector("#taskList").removeChild(this);
+
+        let notes = localStorage.getItem("notes");
+        notes = JSON.parse(notes) || [];
+
+        let text = this.innerHTML;
+        let index = notes.indexOf(text);
+        notes.splice(index, 1);
+
+        localStorage.setItem("notes", JSON.stringify(notes));
     }
+    // HINT🤩 the meaning of 'this' was set by bind() in the createElement function
+    // in this function, 'this' will refer to the current note element
+    // .removeChild(this)
+    // remove the item from screen and from localstorage
 }
 
 class App {
