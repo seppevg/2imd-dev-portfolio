@@ -34,6 +34,8 @@ Grid Ticket
 
 Click this [Link](https://codepen.io/seppevg/pen/KKNoKJj?editors=1100) to see my work on codepen!
 
+![screenshot_lab4_Tekengebied 1](https://user-images.githubusercontent.com/76737040/111221713-24ffad80-85db-11eb-8a8f-b7ba26d45005.jpg)
+
 ![Screenshot_GridTicket_Mobile](https://user-images.githubusercontent.com/76737040/109393239-d2f33280-7920-11eb-95f4-5e9151372416.png)
 
 ![Screenshot_GridTicket_Desktop](https://user-images.githubusercontent.com/76737040/109393238-d1c20580-7920-11eb-9f81-9600ce19c654.png)
@@ -45,3 +47,10 @@ Click this [Link](https://codepen.io/seppevg/pen/KKNoKJj?editors=1100) to see my
 Click this [Link](https://codesandbox.io/s/to-do-seppe-vangeel-b9to5?file=/index.html) to see my work on codesandbox!
 
 ![2021-03-09](https://user-images.githubusercontent.com/76737040/110508947-df864080-8101-11eb-8e70-b83ac52f5e42.png)
+
+## LAB 4 - API
+
+### App Prototype - Advertisement
+
+Click this [Link](https://codesandbox.io/s/lab4-api-advertentie-9umwk) to see my work on codesandbox!
+
