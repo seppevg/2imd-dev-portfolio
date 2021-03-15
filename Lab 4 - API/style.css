@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-family: 'Lobster', cursive;
+    background: #000;
+    padding-bottom: 0.2em;
+}
+
+#title {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+#subtitle {
+    color: #FFCD32;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -1em;
+}
+
+.button{
+    position: absolute;
+    bottom: 120px;
+    margin: 0 2.5em;
+    left: 0;
+    right: 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #FFCD32;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    color: black;
+    text-align: center;
+    font-size: 1.2em;
+}
+.button:hover{
+    background-color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.button:active{
+    transform: scale(1);
+    background-color: #FFCD32;
+}
+
+.footer {
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#adress {
+    color: #FFCD32;
+    text-align: center;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+#ad {
+    background: rgb(141, 43, 43);
+    width: 300px;
+    height: 600px;
+    position: relative;
+}
