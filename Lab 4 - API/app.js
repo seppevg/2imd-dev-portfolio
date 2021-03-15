@@ -23,7 +23,7 @@ class App {
             let temperature = localStorage.getItem("temperature");
             temperature = JSON.parse(temperature);
             let newTime = Math.round(new Date().getTime() / 1000);
-            this.showAdd();
+            this.chooseAdd();
             if (newTime - temperature.time > 7200) {
                 localStorage.clear();
                 this.getWeather();
@@ -46,24 +46,22 @@ class App {
                 };
                 //console.log(temperature);
                 localStorage.setItem("temperature", JSON.stringify(temperature));
-                this.showAdd();
+                this.chooseAdd();
             })
             .catch((error) => {
                 console.log(error);
             });
     }
 
-    showAdd() {
+    chooseAdd() {
         let temperature = localStorage.getItem("temperature");
         temperature = JSON.parse(temperature);
+
         if (temperature.temp > 15) {
             this.showRandomCocktail();
         }
-        else if (temperature.temp <= 15) {
-            this.showCoffee();
-        }
-        else if (temperatures.description === "Rain") {
-            this.itunesTrack3();
+        else {
+            this.showRandomCoffee();
         }
     }
 }
