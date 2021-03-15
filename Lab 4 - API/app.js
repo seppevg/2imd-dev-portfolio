@@ -4,6 +4,9 @@ class App {
         this.lat;
         this.lon;
         this.apiKey = "141e149ec031484786f89b6bf21f8ba1";
+        this.weather = document.getElementById("weather_description");
+        this.drink = document.getElementById("drink");
+        this.ad = document.getElementById("ad");
     }
 
     getLocation() {
@@ -75,6 +78,14 @@ class App {
             })
             .then((json) => {
                 console.log(json);
+                this.weather.innerHTML = "Het is perfect terrasjesweer! Zin in iets fris? Kies dan voor de";
+                this.drink.innerHTML = json.drinks[0].strDrink;
+                //console.log(json.drinks[0].strDrink);
+                let img_cocktail = json.drinks[0].strDrinkThumb;
+                //console.log(json.drinks[0].strDrinkThumb);
+                this.ad.style.background = `url(${img_cocktail})`;
+                this.ad.style.backgroundRepeat = "no-repeat";
+                this.ad.style.backgroundSize = "300px 600px";
             })
     }
 }
