@@ -46,11 +46,25 @@ class App {
                 };
                 //console.log(temperature);
                 localStorage.setItem("temperature", JSON.stringify(temperature));
-                this.showAdd(temperature);
+                this.showAdd();
             })
             .catch((error) => {
                 console.log(error);
             });
+    }
+
+    showAdd() {
+        let temperature = localStorage.getItem("temperature");
+        temperature = JSON.parse(temperature);
+        if (temperature.temp > 15) {
+            this.showRandomCocktail();
+        }
+        else if (temperature.temp <= 15) {
+            this.showCoffee();
+        }
+        else if (temperatures.description === "Rain") {
+            this.itunesTrack3();
+        }
     }
 }
 
