@@ -12,8 +12,24 @@ class App {
             this.lon = position.coords.longitude;
             //console.log(this.lat);
             //console.log(this.lon);
-            this.getWeather();
+            this.checkLocalStorage();
         });
+    }
+
+    checkLocalStorage() {
+        if (localStorage.getItem("temperature") === null) {
+            this.getWeather();
+        }
+        else {
+            let temperature = localStorage.getItem("temperature");
+            temperature = JSON.parse(temperature);
+            let newTime = Math.round(new Date().getTime() / 1000);
+            this.showAdd();
+            if (newTime - temperature.time > 7200) {
+                localStorage.clear();
+                this.getWeather();
+            }
+        }
     }
 
     getWeather() {
@@ -27,14 +43,20 @@ class App {
             })
             .then((json) => {
                 //console.log(json);
-                let temperature = json.main.temp;
-                console.log(temperature);
+                let temperature = {
+                    temp: json.main.temp,
+                    time: Math.round(new Date().getTime() / 1000)
+                };
+                //console.log(temperature);
+                localStorage.setItem("temperature", JSON.stringify(temperature));
                 this.showAdd(temperature);
             })
             .catch((error) => {
                 console.log(error);
             });
     }
+
+
 
     /*
         showAd(temp, text) {
