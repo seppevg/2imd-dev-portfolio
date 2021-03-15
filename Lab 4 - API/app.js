@@ -3,6 +3,7 @@ class App {
         this.getLocation();
         this.lat;
         this.lon;
+
         this.apiKey = "141e149ec031484786f89b6bf21f8ba1";
         this.weather = document.getElementById("weather_description");
         this.drink = document.getElementById("drink");
@@ -27,6 +28,7 @@ class App {
             temperature = JSON.parse(temperature);
             let newTime = Math.round(new Date().getTime() / 1000);
             this.chooseAdd();
+
             if (newTime - temperature.time > 7200) {
                 localStorage.clear();
                 this.getWeather();
