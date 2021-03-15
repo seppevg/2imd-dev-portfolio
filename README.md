@@ -38,4 +38,10 @@ Click this [Link](https://codepen.io/seppevg/pen/KKNoKJj?editors=1100) to see my
 
 ![Screenshot_GridTicket_Desktop](https://user-images.githubusercontent.com/76737040/109393238-d1c20580-7920-11eb-9f81-9600ce19c654.png)
 
-### LAB 3 - ES6
+## LAB 3 - ES6
+
+### To Do List
+
+Click this [Link](https://codesandbox.io/s/to-do-seppe-vangeel-b9to5?file=/index.html) to see my work on codesandbox!
+
+![2021-03-09](https://user-images.githubusercontent.com/76737040/110508947-df864080-8101-11eb-8e70-b83ac52f5e42.png)
