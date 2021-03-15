@@ -56,13 +56,26 @@ class App {
     chooseAdd() {
         let temperature = localStorage.getItem("temperature");
         temperature = JSON.parse(temperature);
-
+        this.showRandomCocktail();
+        /*
         if (temperature.temp > 15) {
             this.showRandomCocktail();
         }
         else {
             this.showRandomCoffee();
-        }
+        }*/
+    }
+
+    showRandomCocktail() {
+        let url_theCocktailDb = `https://www.thecocktaildb.com/api/json/v1/1/random.php`
+        fetch(url_theCocktailDb)
+            .then((response) => {
+                console.log(response);
+                return response.json();
+            })
+            .then((json) => {
+                console.log(json);
+            })
     }
 }
 
