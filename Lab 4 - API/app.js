@@ -3,35 +3,39 @@ class App {
         this.getLocation();
         this.lat;
         this.lon;
+        this.apiKey = "141e149ec031484786f89b6bf21f8ba1";
     }
 
     getLocation() {
         navigator.geolocation.getCurrentPosition((position) => {
             this.lat = position.coords.latitude;
             this.lon = position.coords.longitude;
-            this.getWeather(this.lat, this.lon);
-            console.log(this.lat);
-            console.log(this.lon);
+            //console.log(this.lat);
+            //console.log(this.lon);
+            this.getWeather();
         });
     }
 
-    getWeather(lat, lon) {
-        //http://api.openweathermap.org/data/2.5/weather?lat=${51.0188859}&lon=${4.5225674}&appid={141e149ec031484786f89b6bf21f8ba1}
-        let url_openWeatherMap = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid={141e149ec031484786f89b6bf21f8ba1}`;
+    getWeather() {
+        //http://api.openweathermap.org/data/2.5/weather?lat=51.0188859&lon=4.5225674&appid=141e149ec031484786f89b6bf21f8ba1&units=metric
+
+        let url_openWeatherMap = `https://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lon}&appid=${this.apiKey}&units=metric`;
         fetch(url_openWeatherMap)
             .then((response) => {
+                //console.log(response);
                 return response.json();
             })
             .then((json) => {
-                console.log("😀");
-                console.log(json);
-
-                let temperature = json.currently.temperature;
-                let summary = json.currently.summary;
-
-                this.showAd(temperature, summary);
+                //console.log(json);
+                let temperature = json.main.temp;
+                console.log(temperature);
+                this.showAdd(temperature);
+            })
+            .catch((error) => {
+                console.log(error);
             });
     }
+
     /*
         showAd(temp, text) {
             document.querySelector(
