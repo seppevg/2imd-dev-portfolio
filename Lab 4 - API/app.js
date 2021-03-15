@@ -1,15 +1,17 @@
 class App {
     constructor() {
         this.getLocation();
+        this.lat;
+        this.lon;
     }
 
     getLocation() {
         navigator.geolocation.getCurrentPosition((position) => {
-            let lat = position.coords.latitude;
-            let lon = position.coords.longitude;
-            this.getWeather(lat, lon);
-            console.log(lat);
-            console.log(lon);
+            this.lat = position.coords.latitude;
+            this.lon = position.coords.longitude;
+            this.getWeather(this.lat, this.lon);
+            console.log(this.lat);
+            console.log(this.lon);
         });
     }
 
