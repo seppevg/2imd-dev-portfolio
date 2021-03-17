@@ -61,12 +61,13 @@ class App {
     chooseAdd() {
         let temperature = localStorage.getItem("temperature");
         temperature = JSON.parse(temperature);
-        if (temperature.temp > 15) {
+        this.showRandomCocktail();
+        /*if (temperature.temp > 15) {
             this.showRandomCocktail();
         }
         else {
             this.showRandomCoffee();
-        }
+        }*/
     }
 
     showRandomCocktail() {
@@ -85,7 +86,8 @@ class App {
                 //console.log(json.drinks[0].strDrinkThumb);
                 this.ad.style.background = `url(${img_cocktail})`;
                 this.ad.style.backgroundRepeat = "no-repeat";
-                this.ad.style.backgroundSize = "300px 600px";
+                this.ad.style.backgroundSize = "cover";
+                this.ad.style.backgroundPosition = "center center";
             })
     }
 
@@ -107,7 +109,8 @@ class App {
                 console.log(img_coffee);
                 this.ad.style.background = `url(${img_coffee})`;
                 this.ad.style.backgroundRepeat = "no-repeat";
-                this.ad.style.backgroundSize = "300px 600px";
+                this.ad.style.backgroundSize = "cover";
+                this.ad.style.backgroundPosition = "center center";
             })
     }
 }
