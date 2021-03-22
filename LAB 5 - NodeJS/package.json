@@ -4,11 +4,15 @@
   "description": "In deze opdracht bouwen we een API uit die we later gaan gebruiken om een LIVE-chat te maken voor IMD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
