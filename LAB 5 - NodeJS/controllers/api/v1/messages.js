@@ -2,6 +2,10 @@ const getAll = (req, res) => {
     res.send('Get message');
 };
 
+const getId = (req, res) => {
+    res.send('Get message ' + req.params.id);
+};
+
 const create = (req, res) => {
     res.send('Post message');
 };
@@ -15,6 +19,7 @@ const remove = (req, res) => {
 };
 
 module.exports.getAll = getAll;
+module.exports.getId = getId;
 module.exports.create = create;
 module.exports.update = update;
 module.exports.remove = remove;
