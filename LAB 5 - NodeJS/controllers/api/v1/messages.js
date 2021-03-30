@@ -1,8 +1,18 @@
 const getAll = (req, res) => {
-    res.json({
-        status: "success",
-        data: { message: `GETTING messages` }
-    });
+    console.log(req.query.user); //Naam van gebruiker
+    if (req.query.user) {
+        let username = req.query.user;
+        res.json({
+            status: "success",
+            data: { message: `GETTING messages for username ${username}` }
+        });
+    }
+    else {
+        res.json({
+            status: "success",
+            data: { message: "GETTING messages" }
+        });
+    }
 };
 
 const getId = (req, res) => {
@@ -14,10 +24,10 @@ const getId = (req, res) => {
 };
 
 const create = (req, res) => {
-    let id = req.params.id;
+    let username = "Pikachu";
     res.json({
         status: "success",
-        data: { message: `POSTING a message with ID ${id}` }
+        data: { message: `POSTING a new message for user ${username}` }
     });
 };
 
