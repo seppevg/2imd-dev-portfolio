@@ -1,0 +1,16 @@
+{
+  "name": "lab5_nodejs",
+  "version": "1.0.0",
+  "description": "In this folder, I'm going to make a chat API that I can later use in my APP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seppe Vangeel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "pug": "^3.0.2"
+  }
+}
