@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.render('index', {
         "title": 'Homepage',
         "header": 'Welcome!',
-        "message": 'This MessagesAPI is very cool!'
+        "message": 'This is my first time using node and pug!'
     });
 });
 
