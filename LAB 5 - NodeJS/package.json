@@ -1,18 +1,15 @@
 {
   "name": "lab5_nodejs",
   "version": "1.0.0",
-  "description": "In deze opdracht bouwen we een API uit die we later gaan gebruiken om een LIVE-chat te maken voor IMD",
+  "description": "In this folder, I'm going to make a chat API that I can later use in my APP",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/nodemon"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Seppe Vangeel",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4.1.0"
-  },
-  "devDependencies": {
+    "express": "^4.17.1",
     "nodemon": "^2.0.7"
   }
 }
