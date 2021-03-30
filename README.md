@@ -53,3 +53,9 @@ Click this [Link](https://codesandbox.io/s/to-do-seppe-vangeel-b9to5?file=/index
 Click this [Link](https://codesandbox.io/s/lab4-api-advertentie-9umwk) to see my work on codesandbox!
 
 ![screenshot_lab4](https://user-images.githubusercontent.com/76737040/111490001-f1d43000-873a-11eb-8d6a-afc0a07208c9.jpg)
+
+## LAB 5 - NODE
+
+### Chat API
+
+Click this [Link](https://codepen.io/seppevg/pen/KKaNqzV) to see my work on codepen!
