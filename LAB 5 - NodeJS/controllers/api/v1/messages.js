@@ -1,21 +1,40 @@
 const getAll = (req, res) => {
-    res.send('Get message');
+    res.json({
+        status: "success",
+        data: { message: `GETTING messages` }
+    });
 };
 
 const getId = (req, res) => {
-    res.send('Get message ' + req.params.id);
+    let id = req.params.id;
+    res.json({
+        status: "success",
+        data: { message: `Get the message with ID ${id}` }
+    });
 };
 
 const create = (req, res) => {
-    res.send('Post message');
+    let id = req.params.id;
+    res.json({
+        status: "success",
+        data: { message: `POSTING a message with ID ${id}` }
+    });
 };
 
 const update = (req, res) => {
-    res.send('Put message ' + req.params.id);
+    let id = req.params.id;
+    res.json({
+        status: "success",
+        data: { message: `UPDATING a message with ID ${id}` }
+    });
 };
 
 const remove = (req, res) => {
-    res.send('Delete message ' + req.params.id);
+    let id = req.params.id;
+    res.json({
+        status: "success",
+        data: { message: `DELETING a message with ID ${id}` }
+    });
 };
 
 module.exports.getAll = getAll;
