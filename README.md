@@ -54,10 +54,24 @@ Click this [Link](https://codesandbox.io/s/lab4-api-advertentie-9umwk) to see my
 
 ![screenshot_lab4](https://user-images.githubusercontent.com/76737040/111490001-f1d43000-873a-11eb-8d6a-afc0a07208c9.jpg)
 
-## LAB 5 - NODE
+## LAB 5 - Node JS
 
 ### Chat API
 
 Click this [Link](https://codepen.io/seppevg/pen/KKaNqzV) to see my work on codepen!
 
 Click this [Link](https://chat-nodejs-seppevangeel.herokuapp.com/) to see my api on heroku!
+
+## LAB 6 - Web Sockets
+
+[Link](https://github.com/seppevg/2imd-dev-lab6) to lab 6 repository
+
+### Heroku App
+
+[Link](https://lab-6-web-sockets.herokuapp.com/) to dashboard
+
+[Link](https://lab-6-web-sockets.herokuapp.com/updatestats) to update page
+
+### Demo GIF
+
+![demo](https://user-images.githubusercontent.com/76737040/114073898-19369c80-98a4-11eb-8217-1142f1099f39.gif)
