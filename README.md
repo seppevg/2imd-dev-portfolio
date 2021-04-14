@@ -74,4 +74,4 @@ Click this [Link](https://chat-nodejs-seppevangeel.herokuapp.com/) to see my api
 
 ### Demo GIF
 
-![demo](https://user-images.githubusercontent.com/76737040/114073898-19369c80-98a4-11eb-8217-1142f1099f39.gif)
+![DemoWebSockets](https://user-images.githubusercontent.com/76737040/114729560-63a29800-9d40-11eb-8c1b-c29926c30815.gif)
